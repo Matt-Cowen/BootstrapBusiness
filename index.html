@@ -2,109 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whisky Drop | Taste a new whiskey every month</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whisky Drop | Taste a new whiskey every month</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <article class="container">
-        <!-- Callout -->
-        <section id="callout">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p class="lead">Sign up to start receiving the world's best whiskeys every month.
-                <s>£19.99</s><strong><mark>The first one is free!</mark></strong>
-            </p>
-            <p class="text-muted"><small>You must be over 18 to sign up. Please drink responsibly.</small></p>
-            <button class="btn btn-success btn-lg">Sign Up!</button>
+  <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <a href="" class="navbar-brand">Whiskey Drop</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
+      <li class="nav-item mr-2"><a href="/about" class="nav-link">About</a></li>
+      <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a></li>
+    </ul>
+    <div class="d-none d-md-block">
+      <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+      <a href="/login">Sign In / Sign Up</a>
+    </div>
+  </nav>
+
+
+  <article class="container mt-3">
+    <!-- Callout -->
+    <div class="row">
+      <div class="col-12">
+        <section class="callout jumbotron text-center">
+          <h1>The finest whiskeys delivered to your doorstep.</h1>
+          <p class="lead">Sign up to start receiving the world's best whiskeys every month.
+            <s class="d-none d-sm-inline">£19.99</s>
+            <span class="d-inline d-sm-none"><br></span>
+            <strong><mark>The first one is free!</mark></strong>
+          </p>
+          <button class="btn btn-success btn-lg">Sign Up!</button>
+          <p class="text-muted"><small>You must be over 18 to sign up. Please drink responsibly.</small></p>
         </section>
+      </div>
+    </div>
 
-        <hr>
+    <hr>
 
-        <!-- Quotes -->
-        <section class="blockquote">
-            <h2 class="text-uppercase">Quotes:</h2>
-            <blockquote class="quote">
-                <p>I've been introduced to more than 10 great international whiskeys I never knew about! </p>
-                <p>- Jane Doe</p>
-            </blockquote>
-            <blockquote class="blockquote">
-                <p>I havern't been sober for mornths!</p>
-                <p>- John Doe</p>
-            </blockquote>
-        </section>
+    <!-- Quotes -->
+    <section class="blockquote">
+      <div class="row">
+        <div class="col-12 my-5">
+          <h2 class="text-uppercase">Quotes:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <blockquote class="quote">
+            <p>I've been introduced to more than 10 great international whiskeys I never knew about! </p>
+            <p>- Jane Doe</p>
+          </blockquote>
+        </div>
+        <div class="col-12 col-md-6">
+          <blockquote class="blockquote">
+            <p>I havern't been sober for mornths!</p>
+            <p>- John Doe</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-        <hr>
+    <hr>
 
-        <!-- Features -->
-        <section id="features">
-            <h2 class="text-uppercase">Features:</h2>
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
-                    nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
-                    Qui.</p>
-                <a href="" class="btn btn-sm btn-light">Read More</a>
-            </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
-                    nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
-                    Qui.</p>
-                <a href="" class="btn btn-sm btn-light">Read More</a>
-            </div>
-            <div class="feature">
-                <h3>Feature 3</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
-                    nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
-                    Qui.</p>
-                <a href="" class="btn btn-sm btn-light">Read More</a>
-            </div>
-        </section>
+    <!-- Features -->
+    <section id="features">
+      <div class="row">
+        <div class="col-12 my-5">
+          <h2 class="text-uppercase">Features:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
+              nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
+              Qui.</p>
+            <a href="" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
+              nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
+              Qui.</p>
+            <a href="" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+        <div class="col-12 d-md-none d-lg-block col-lg-4">
+          <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet similique quos minus odio odit quae
+              nihil nobis quidem labore quaerat eius quisquam dignissimos enim, eaque eos repudiandae quasi nam.
+              Qui.</p>
+            <a href="" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Monthly Favourites -->
-         <section id="monthlyfavs">
-            <h2 class="text-uppercase">Monthly Favourites:</h2>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Origin</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Nikka from the Barrel</td>
-                    <td>Japan</td>
-                  </tr>
-                  <tr>
-                    <td>Glengoolie Blue</td>
-                    <td>Scotland</td>
-                  </tr>
-                  <tr>
-                    <td>Kavalan Distillery Select No. 1</td>
-                    <td>Taiwan</td>
-                  </tr>
-                  <tr>
-                    <td>Abasolo Corn Whisky</td>
-                    <td>Mexico</td>
-                  </tr>
-                  <tr>
-                    <td>Billy Backyard Bourbon</td>
-                    <td>USA</td>
-                  </tr>
-                </tbody>
-              </table>
+    <!-- Monthly Favourites -->
+    <section id="monthlyfavs">
+      <div class="row">
+        <div class="col-12 my-5">
+      <h2 class="text-uppercase">Monthly Favourites:</h2>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Origin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nikka from the Barrel</td>
+            <td>Japan</td>
+          </tr>
+          <tr>
+            <td>Glengoolie Blue</td>
+            <td>Scotland</td>
+          </tr>
+          <tr>
+            <td>Kavalan Distillery Select No. 1</td>
+            <td>Taiwan</td>
+          </tr>
+          <tr>
+            <td>Abasolo Corn Whisky</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Billy Backyard Bourbon</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </section>
 
-         </section>
 
-
-    </article>
+  </article>
 
 </body>
 
