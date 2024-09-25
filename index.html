@@ -8,9 +8,16 @@
   <script src="https://kit.fontawesome.com/b3d1e1744b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body>
+
+  <!-- Navbar -->
+
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
     <a href="" class="navbar-brand">Whiskey Drop</a>
 
@@ -22,6 +29,16 @@
       <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
         <li class="nav-item mr-2"><a href="/about" class="nav-link">About</a></li>
+        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskeys</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Irish</a>
+            <a class="dropdown-item" href="#">Scotch</a>
+            <a class="dropdown-item" href="#">Japanese</a>
+            <a class="dropdown-item" href="#">American</a>
+          </div>
+
+        </li>
         <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a></li>
       </ul>
     </div>
@@ -31,8 +48,8 @@
     </div>
   </nav>
 
-
-  <article class="container mt-3">
+<!-- 
+  <div class="container alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -41,26 +58,31 @@
         </div>
       </div>
     </div>
+  </div> -->
 
-    <!-- Callout -->
+  <!-- Callout -->
+  <div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
       <div class="col-12">
         <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
-          <p class="lead">Sign up to start receiving the world's best whiskeys every month.
-            <s class="d-none d-sm-inline">£19.99</s>
+          <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+          <hr class="block-divider block-divider-orange">
+          <p class="lead my-4">Sign up to start receiving the world's best whiskeys every month.
+            <s class="d-none d-sm-inline">£19.99</s>   
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>The first one is free!</mark></strong>
           </p>
-          <button class="btn btn-success btn-lg">Sign Up!</button>
-          <p class="text-muted"><small>You must be over 18 to sign up. Please drink responsibly.</small></p>
+          <button class="btn btn-success btn-lg btn--cta btn--orange" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+          <p class="text-muted mt-3"><small>You must be over 18 to sign up. Please drink responsibly.</small></p>
         </section>
       </div>
     </div>
 
-    <hr>
+  </div>
 
-    <!-- Quotes -->
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="blockquote">
       <div class="row">
         <div class="col-12 my-5">
@@ -97,9 +119,10 @@
       </div>
     </section>
 
-    <hr>
+  </div>
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="container features-container">
     <section id="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -137,8 +160,10 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- Monthly Favourites -->
+  <!-- Monthly Favourites -->
+  <div class="container monthlyfavs-container">
     <section id="monthlyfavs">
       <div class="row">
         <div class="col-12 my-5">
@@ -180,12 +205,46 @@
         </div>
       </div>
     </section>
+  </div>
 
 
-  </article>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up to Whiskey Drop</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="E-mail Address">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+            </div>
+            <div class="mb-3">
+              <label for="repeatPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleRepeatPassword1" placeholder="Repeat Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 
 
 

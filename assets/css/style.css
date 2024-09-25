@@ -1,0 +1,112 @@
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.alert-container {
+
+}
+
+.callout-container {
+    height: 100vh;
+    background: url(../images/whiskeybarrel.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+/* Background */
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.quotes-container {
+
+}
+
+.features-container {
+
+}
+
+.monthlyfavs-container {
+
+}
+
+/* Blocck Dividers */
+
+.block-divider{
+    width: 200px;
+    height: 2px;
+}
+
+.block-divider-orange {
+    background-color: rgb(202, 77, 31);
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+    color: rgba(234, 235, 205, 1);
+}
+
+.jumbotron-header {
+    color: rgba(234, 235, 205, 1);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: rgba(234, 235, 205, 0.63);
+}
+
+.jumbotron mark {
+    background-color: rgba(234, 235, 205, 1);
+    border-radius: 10px;
+}
+
+/* Buttons */
+
+.btn--cta {
+    color: rgba(234, 235, 205, 1);
+    font-weight: bold;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.btn--orange {
+    background-color: rgb(202, 77, 31);
+    border: none;
+}
+
+.btn--orange:hover {
+    color: rgba(234, 235, 205, 1);
+    background-color: rgb(245, 87, 29);
+    border: none;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .callout-container {
+        justify-content: flex-start;
+        padding-left: 7vw;
+    }
+    
+}
